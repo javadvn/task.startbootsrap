@@ -17,6 +17,9 @@ body {margin: 0px;
   z-index: 1;
 }
 
+.listed-part{
+  margin-left: 50px;
+}
 
 
 .toplogocontainer{
@@ -26,6 +29,7 @@ body {margin: 0px;
   justify-content: center;
   padding-left: 40px;
   flex-shrink: 0;
+
 }
 
 .topitemscontainer{
@@ -166,7 +170,11 @@ margin: 0px;
   row-gap: 40px;
   padding: 0 120px;
 }
-
+@media screen and (max-width: 1000px) {
+  .windowssection{
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .window{
 width: 100%;
 }
@@ -302,6 +310,32 @@ margin-top: 50px;
   display: flex;
   flex-direction: column;
   min-width: 300px;
+}
+
+.social-media-links-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.social-media-links{
+  display: flex;
+  color: rgb(248, 249, 250);
+  font-size: 20px;
+  border-style: solid;
+  border-color: rgb(248, 249, 250);
+  border-width: 2px;
+  border-radius: 28px;
+  min-width: 48px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .last-section-text{
